@@ -14,8 +14,8 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Greeter = await hre.ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
+  const Greeter = await hre.ethers.getContractFactory("Greeter"); // async javascript 
+  const greeter = await Greeter.deploy("Hello, Hardhat!"); // async javascript wait for line 17 to be executed
 
   await greeter.deployed();
 
